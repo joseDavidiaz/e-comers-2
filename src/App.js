@@ -11,12 +11,13 @@ function App() {
     <>
       <NavBar/>
     
-      <ItemListContainer greeting="Escribir string a enviar como prop" />
       {/* <ItemListContainer/> */}
  
       <ItemCount/>
 
-     
+      <h2> OFERTAS </h2>
+
+      <ItemCount/>
 
     </>
   );
