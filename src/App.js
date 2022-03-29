@@ -3,7 +3,7 @@ import './App.css';
 
 import NavBar from "./Componetes/NavBar/NavBar.js";
 import ItemCount from "./Componetes/ItemListContainer/ItemListContainer";
-import Card from "./Componetes/Card/Card";
+
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <>
       <NavBar/>
     
+      <ItemListContainer greeting="Escribir string a enviar como prop" />
       {/* <ItemListContainer/> */}
  
       <ItemCount/>
