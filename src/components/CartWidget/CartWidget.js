@@ -1,4 +1,4 @@
-const Carro = () => {
+const CartWidget = () => {
     return (
         <div class="hidden xl:flex items-center space-x-5 items-center">
                 <a class="hover:text-gray-200" href="#">
@@ -58,4 +58,4 @@ const Carro = () => {
     )
 }
 
-export default Carro;
+export default CartWidget

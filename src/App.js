@@ -1,28 +1,39 @@
-
 import './App.css';
+import React, {useState, useEffect} from 'react'
 
-import NavBar from "./Componetes/NavBar/NavBar.js";
-import ItemCount from "./Componetes/ItemListContainer/ItemListContainer";
-
+import NavBar from './components/NavBar/NavBar.js'
+//import NavBarClass from './components/NavBarClass'
+import ListProducts from './components/ListProducts/ListProducts';
+import ModalCustom from './components/Modal/Modal'
+import Card from './components/Card/Card';
+import Container from '@mui/material/Container';
 
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (value) => {
+      setOpen(false);
+  };
+  
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+
+
+
   return (
-    <>
-      <NavBar/>
+    //JSX
     
-      {/* <ItemListContainer/> */}
- 
-      <ItemCount/>
-
-      <h2> OFERTAS </h2>
-
-      <ItemCount/>
-
-    </>
+    <div className="App">
+     <NavBar />
+      {/* <NavBarClass /> */}
+      <Container className='container-general'> 
+        <ListProducts />
+      </Container>
+    </div>
   );
 }
-
-
 
 export default App;

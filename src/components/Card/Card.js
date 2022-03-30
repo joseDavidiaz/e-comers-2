@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import './Card.css'
-//import ItemCount from '../ItemCount/ItemCount'
+import ItemCount from '../ItemCount/ItemCount'
 
 
 export default function Card({ data }) {
@@ -9,23 +9,23 @@ export default function Card({ data }) {
     const [ countTest, setCountTest ] = useState(1)
     //const [ ]
 
-     useEffect( () => {
-       console.log("SOLO MONTAJE")
-    },[] )
+    // useEffect( () => {
+    //     console.log("SOLO MONTAJE")
+    // },[] )
 
-     useEffect( () => {
-         console.log("Siempre que entre en fase ACTUALIZACION")
-     })
+    // useEffect( () => {
+    //     console.log("Siempre que entre en fase ACTUALIZACION")
+    // })
 
-     useEffect( () => {
-         console.log("SOLO CUANDO CAMBIE COUNT")
-     },[count] )
+    // useEffect( () => {
+    //     console.log("SOLO CUANDO CAMBIE COUNT")
+    // },[count] )
 
-     useEffect( () => {
-         return () => {
-             console.log("FASE DE DESMONTAJE")
-         }
-     })
+    // useEffect( () => {
+    //     return () => {
+    //         console.log("FASE DE DESMONTAJE")
+    //     }
+    // })
 
     const addStock = () => {
         setCount(count + 1)
@@ -41,7 +41,10 @@ export default function Card({ data }) {
                 <h2>{title}</h2>
                 <p>Precio : $ {price}</p>
                 <p>Talle : {talle}</p>
+                <button>Quitar</button>
+                <button>Agregar</button>
                 <button>Comprar</button>
+
             </div>
         </div>
     )

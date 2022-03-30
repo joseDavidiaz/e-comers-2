@@ -9,8 +9,6 @@ const ItemCount = ({stock}) => {
     }
     return(
         <>
-        <p className='titulos'>ItemListContainer</p>
-        <h2>ItemListContainer</h2>
             <button>-</button>
             <p>{count}</p>
             <button onClick={onAdd}>+</button>

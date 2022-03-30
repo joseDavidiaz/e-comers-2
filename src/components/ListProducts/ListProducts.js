@@ -3,7 +3,7 @@ import Card from '../Card/Card'
 
 const ListProducts = ({children}) => {
     const mockProductos = [{
-        title : 'Remera',
+        title : 'Playera',
         id: 1,
         talle: 'XL',
         price: 1500,
@@ -11,7 +11,7 @@ const ListProducts = ({children}) => {
         stock: 3
     },
     {
-        title : 'Jean',
+        title : 'Pantalón',
         id: 2,
         talle: 'L',
         price: 3500,
@@ -19,7 +19,7 @@ const ListProducts = ({children}) => {
         stock: 6  
     },
     {
-        title : 'Musculosa',
+        title : 'Camisa',
         id: 3,
         talle: 'L',
         price: 1200,
